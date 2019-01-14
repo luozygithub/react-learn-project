@@ -1,0 +1,23 @@
+@import "../../../stylesheets/base";
+.app-footer{
+    width: 100%;
+    height: 0.85rem;
+    padding-top: 0.02rem;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    background: #fff;
+    a{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        i{
+            font-size: 1.6em;
+        }
+    }
+    .active{
+        color:#f8a120;
+    }
+}

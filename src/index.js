@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+//引入css样式
+import "./stylesheets/main.scss"
+//引入rem.js
+import "./modules/rem"
+//引入axios-util/index.js
+import "./modules/axios-util"
+//引入Router
+import {HashRouter as Router} from "react-router-dom"
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(
+    <Router>
+        <App />
+    </Router>
+, document.getElementById('root'));
